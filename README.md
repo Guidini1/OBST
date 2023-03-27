@@ -6,7 +6,7 @@
   A paralelização do código foi feita utilizando duas estratégias diferentes, primeiro foi implementada uma paralelização utilizando OpenMP que aloca threads para dividir as execuções, foi implementada também uma paralelização utilizando a GPU com CUDA.
 # Versão sequencial de referência:
   A parte do código original onde realizamos a paralelização é na função void obst(int* output,int n,float* p) no código obst-seq.cc, mas especificamente no trecho:  
-for(diag = 0; diag <= n; diag++){
+```for(diag = 0; diag <= n; diag++){
     for(cell = 0; cell <= n-diag; cell++){
         low = cell;
         high = cell+diag;
@@ -34,5 +34,6 @@ for(diag = 0; diag <= n; diag++){
 int tmp=0;
 print_root(tmp,output,root,0,n-1);
 }
+```
 Versão Paralela Comentada:
   
