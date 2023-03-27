@@ -1,5 +1,6 @@
 # OBST
 # Código da maratona de programação sobre o problema de árvores binárias de busca ótimas
+Tive um pouco de dificuldade com o GitHub, mas acredito que deixei o código sequencial na pasta seq, a versão com openMP na pasta thr e a versão com CUDA na pasta Cuda. O gráfico dos resultados também está no diretório. Aqui está o link do Colab onde eu trabalhei que pode ver o que foi feito mais organizado https://colab.research.google.com/drive/1h0kjXxHeqbzl9hpVfRu0CdxtZS2U9EwR?usp=sharing
 # Descrição do problema:
   Uma árvore de busca binária é uma maneira de organizar n chaves de um conjunto ordenado linearmente para garantir sua recuperação em tempo *Θ(log n)*. Dada a probabilidade de cada chave ser acessada, nossa tarefa consiste em criar uma árvore binária de busca ótima que minimize o tempo médio de busca.
 # Estratégias de Paralelização:
